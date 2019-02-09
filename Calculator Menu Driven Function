@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+class one
+{
+public:
+void fun1()
+{
+int a1,b1,c1;
+clrscr();
+cout<<"Enter Value of one and two for addition\n";
+cin>>a1>>b1;
+c1=a1+b1;
+cout<<"Output Is : "<<c1;
+}
+};
+void main()
+{
+int a;
+clrscr();
+one aa;
+aa.fun1();
+getch();
+}
