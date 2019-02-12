@@ -1,47 +1,42 @@
 #include<stdio.h>
 #include<conio.h>
 #include<iostream.h>
-public:
-class start
+class Start
 {
 public:
 void str()
 {
-int a,b;
+int b;
 cout<<"Press 1 for addition\nPress 2 for subtraction\nPress 3 for multiply\nPress 4 for division\nPress 0 for Exit\n";
 cin>>b;
 if(b==1)
 {
-one aa;
-aa.fun1();
+
 }
 else if(b==2)
 {
-two aa;
-aa.fun2();
+
 }
 else if(b==3)
 {
-three aa;
-aa.fun3();
+
 }
 else if(b==4)
 {
-four aa;
-aa.fun4();
+
 }
 else if(b==0)
 {
-one aa;
-aa.fun1();
+
 }
 else
 {
 cout<<"Wrong Input";
 }
+}
 };
-public:
-class one
+
+class one : public Start
 {
 public:
 void fun1()
@@ -54,7 +49,7 @@ c1=a1+b1;
 cout<<"Output Is : "<<c1;
 }
 };
-public:
+
 class two
 {
 public:
@@ -68,7 +63,7 @@ c1=a1-b1;
 cout<<"Output Is : "<<c1;
 }
 };
-public:
+
 class three
 {
 public:
@@ -82,7 +77,7 @@ c1=a1+b1;
 cout<<"Output Is : "<<c1;
 }
 };
-public:
+
 class four
 {
 public:
@@ -104,12 +99,12 @@ cout<<"If you want to proceed press 1 and 0 for Exit";
 cin>>a;
 if(a==1)
 {
-start aa;
+Start aa;
 aa.str();
 }
 else
 {
-exit(0);
+//exit(0);
 }
 getch();
 }
