@@ -15,33 +15,23 @@ class Cal
 class Add : public Cal
 {
  public:
-
  void sum()
  {
   output=num1+num2;
+  cout<<output;
  }
 };
 
 class Sub : public Cal
 {
  public:
-
  void minus()
  {
  output=num1-num2;
+ cout<<output;
  }
 
 };
-
-class Display : public Add
-{
- public:
- void show()
- {
-  cout<<output;
- }
-};
-
 void main()
 {
  int ch;
@@ -51,20 +41,20 @@ void main()
  cin>>ch;
  switch(ch)
  {
-  Display d;
+
  case 1:
-  d.input();
-  d.sum();
-  d.show();
+  Add a;
+  a.input();
+  a.sum();
   break;
  case 2:
-  d.input();
-  d.sum();
-  d.show();
+  Sub s;
+  s.input();
+  s.minus();
+  break;
  default:
  cout<<"Invalid choice...";
-
+  break;
  }
-
  getch();
 }
