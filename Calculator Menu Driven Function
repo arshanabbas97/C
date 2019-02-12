@@ -1,6 +1,46 @@
 #include<stdio.h>
 #include<conio.h>
 #include<iostream.h>
+public:
+class start
+{
+public:
+void str()
+{
+int a,b;
+cout<<"Press 1 for addition\nPress 2 for subtraction\nPress 3 for multiply\nPress 4 for division\nPress 0 for Exit\n";
+cin>>b;
+if(b==1)
+{
+one aa;
+aa.fun1();
+}
+else if(b==2)
+{
+two aa;
+aa.fun2();
+}
+else if(b==3)
+{
+three aa;
+aa.fun3();
+}
+else if(b==4)
+{
+four aa;
+aa.fun4();
+}
+else if(b==0)
+{
+one aa;
+aa.fun1();
+}
+else
+{
+cout<<"Wrong Input";
+}
+};
+public:
 class one
 {
 public:
@@ -13,31 +53,46 @@ cin>>a1>>b1;
 c1=a1+b1;
 cout<<"Output Is : "<<c1;
 }
+};
+public:
+class two
+{
+public:
 void fun2()
 {
 int a1,b1,c1;
 clrscr();
-cout<<"Enter Value of one and two for addition\n";
+cout<<"Enter Value of one and two for subtraction\n";
 cin>>a1>>b1;
 c1=a1-b1;
 cout<<"Output Is : "<<c1;
 }
+};
+public:
+class three
+{
+public:
 void fun3()
 {
 int a1,b1,c1;
 clrscr();
-cout<<"Enter Value of one and two for addition\n";
+cout<<"Enter Value of one and two for multiply\n";
 cin>>a1>>b1;
-c1=a1*b1;
+c1=a1+b1;
 cout<<"Output Is : "<<c1;
 }
+};
+public:
+class four
+{
+public:
 void fun4()
 {
 int a1,b1,c1;
 clrscr();
-cout<<"Enter Value of one and two for addition\n";
+cout<<"Enter Value of one and two for division\n";
 cin>>a1>>b1;
-c1=a1/b1;
+c1=a1+b1;
 cout<<"Output Is : "<<c1;
 }
 };
@@ -45,7 +100,16 @@ void main()
 {
 int a;
 clrscr();
-one aa;
-aa.fun1();
+cout<<"If you want to proceed press 1 and 0 for Exit";
+cin>>a;
+if(a==1)
+{
+start aa;
+aa.str();
+}
+else
+{
+exit(0);
+}
 getch();
 }
