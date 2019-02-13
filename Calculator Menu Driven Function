@@ -30,8 +30,26 @@ class Sub : public Cal
  output=num1-num2;
  cout<<output;
  }
-
 };
+ 
+ class Mul : public cal
+ {
+ void into()
+ {
+ output=num1*num2;
+ cout<<output;
+ }
+};
+
+class Div : public cal
+{
+void upon()
+{
+output=num1/num2;
+cout<<output;
+}
+};
+
 void main()
 {
  int ch;
@@ -47,11 +65,25 @@ void main()
   a.input();
   a.sum();
   break;
+  
  case 2:
-  Sub s;
-  s.input();
-  s.minus();
+  Sub b;
+  b.input();
+  b.minus();
   break;
+  
+  case 3:
+  Mul c;
+  c.input();
+  c.into();
+  break;
+  
+  case 4:
+  Div d;
+  d.input();
+  d.upon();
+  break;
+  
  default:
  cout<<"Invalid choice...";
   break;
