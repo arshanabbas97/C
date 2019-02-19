@@ -26,7 +26,7 @@ cout<<"value of length * width * input = "<<a<<endl;
 }
 else
 {
-exit(0);
+cout<<"Error";
 }
 }
 };
