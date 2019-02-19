@@ -12,10 +12,11 @@ width=25;
 }
 void fun()
 {
+cout<<"Pre Define value of Length and Width is 20 and 25 \n";
 cout<<"Enter Input "<<endl;
 cin>>input;
 a=len*width*input;
-cout<<a<<endl;
+cout<<value of length * width * input = a<<endl;
 }
 };
 void main()
