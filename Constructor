@@ -15,8 +15,19 @@ void fun()
 cout<<"Pre Define value of Length and Width is 20 and 25 \n";
 cout<<"Enter Input "<<endl;
 cin>>input;
+a=len*width;
+cout<<"Length Into Width Equal to "<<a<<endl;
+cout<<"If you want to proceed press 1 otherwise 0";
+cin>>a1;
+if(a1==1)
+{
 a=len*width*input;
 cout<<value of length * width * input = a<<endl;
+}
+else
+{
+exit(0);
+}
 }
 };
 void main()
