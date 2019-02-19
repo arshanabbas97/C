@@ -45,8 +45,8 @@ getch();
 #include<conio.h>
 #include<iostream.h>
 class ONE
-int side,ar;
 {
+int side,ar;
 ONE(int lee)
 {
 side=lee;
@@ -60,8 +60,8 @@ cout<<ar;
 void main()
 {
 clrscr();
-ONE abc;
-abc.fun(25);
+ONE abc(20);
+abc.fun();
 getch();
 }
 --------------------------------------------------------------------------------------------------------------------------------
