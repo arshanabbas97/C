@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+class one
+{
+int a,b,c,d;
+public:
+void fun()
+{
+cout<<"Enter values of A and B\n";
+cin>>a>>b;
+cout<<"Which number you want to multiply with "<<a<<endl;
+cin>>c;
+d=a*c;
+cout<<"A multiply C is "<<d<<endl;
+cout<<"Which number you want to multiply with "<<b<<endl;
+cin>>c;
+d=b*c;
+cout<<"B multiply C is "<<d;
+}
+};
+void main()
+{
+clrscr();
+one abc;
+abc.fun();
+getch();
+}
