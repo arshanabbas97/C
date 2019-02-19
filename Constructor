@@ -22,7 +22,7 @@ cin>>a1;
 if(a1==1)
 {
 a=len*width*input;
-cout<<value of length * width * input = a<<endl;
+cout<<"value of length * width * input = "<<a<<endl;
 }
 else
 {
@@ -32,6 +32,7 @@ exit(0);
 };
 void main()
 {
+clrscr();
 one abc;
 abc.fun();
 getch();
