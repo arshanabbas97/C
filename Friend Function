@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+class ONE
+{
+int l,b,ar;
+public:
+ONE()
+{
+l=25;
+b=20;
+}
+friend void fun2();
+};
+class TWO
+{
+public:
+void fun2()
+{
+ar=l+b;
+cout<<ar;
+}
+};
+void main()
+{
+clrscr();
+ONE abc;
+abc.fun2();
+getch();
+}
