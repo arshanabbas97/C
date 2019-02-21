@@ -12,15 +12,11 @@ b=20;
 }
 friend void fun2();
 };
-class TWO
-{
-public:
 void fun2()
 {
 ar=l+b;
 cout<<ar;
 }
-};
 void main()
 {
 clrscr();
