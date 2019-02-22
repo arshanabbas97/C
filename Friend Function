@@ -1,26 +1,51 @@
+-------------------------------------------------------Membership Label------------------------------------------------------------
 #include<stdio.h>
 #include<conio.h>
 #include<iostream.h>
 class ONE
 {
-int l,b,ar;
 public:
-ONE()
-{
-l=25;
-b=20;
-}
-friend void fun2();
+int x;
+void fun();
 };
-void fun2()
+void ONE::fun()
 {
-ar=l+b;
-cout<<ar;
+x=10;
+cout<<a;
 }
 void main()
 {
 clrscr();
 ONE abc;
-abc.fun2();
+abc.fun();
 getch();
 }
+-----------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------Friend Function--------------------------------------------------------
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+class ONE
+{
+public:
+int x;
+void ff()
+{
+x=10;
+}
+friend void fun();
+};
+void fun(ONE abc)
+{
+cout<<abc.x;
+}
+void main()
+{
+clrscr();
+ONE abc;
+abc.ff();
+fun(abc);
+getch();
+}
+-----------------------------------------------------------------------------------------------------------------------------------
