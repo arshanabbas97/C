@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<dos.h>
+class TWO
+{
+public:
+clcscr();
+void fun2()
+{
+cout<<"wow";
+}
+};
+class ONE:public TWO
+{
+public:
+char a;
+clrscr();
+void fun()
+{
+gotoxy(20,2);
+textcolor(7);
+cprintf("Question 1: How Many States Do India Have ?\n");
+gotoxy(20,7);
+textcolor(7);
+cprintf("A) 27");
+gotoxy(55,7);
+textcolor(7);
+cprintf("B) 26");
+gotoxy(20,11);
+textcolor(7);
+cprintf("C) 29");
+gotoxy(55,11);
+textcolor(7);
+cprintf("D) 28");
+gotoxy(20,15);
+textcolor(7);
+cprintf("You Choose :");
+cin>>a;
+switch(a)
+{
+case 'a':
+cout<<"Wrong Answer";
+break;
+case 'b':
+cout<<"Wrong Answer";
+break;
+case 'c':
+cout<<"Right Answer\n";
+delay(3000);
+fun2();
+break;
+case 'd':
+cout<<"Wrong Answer";
+break;
+default:
+cout<<"Wrong Input";
+}
+}
+};
+
+void main()
+{
+clrscr();
+ONE abc;
+abc.fun();
+getch();
+}
