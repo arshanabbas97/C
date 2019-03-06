@@ -2,13 +2,62 @@
 #include<conio.h>
 #include<iostream.h>
 #include<dos.h>
-class TWO
+class THREE
 {
 public:
-clcscr();
+void fun3()
+{
+clrscr();
+gotoxy(30,14);
+cout<<"You Won";
+}
+};
+class TWO:public THREE
+{
+public:
+char ab;
 void fun2()
 {
-cout<<"wow";
+clrscr();
+gotoxy(23,2);
+cprintf("Second Question on you Screen is:\n");
+gotoxy(18,5);
+cprintf("India Got it's Constitution at work in which year ?");
+gotoxy(20,8);
+textcolor(7);
+cprintf("A) 1947");
+gotoxy(55,8);
+textcolor(7);
+cprintf("B) 1950");
+gotoxy(20,12);
+textcolor(7);
+cprintf("C) 1949");
+gotoxy(55,12);
+textcolor(7);
+cprintf("D) 1948");
+gotoxy(20,15);
+textcolor(7);
+cprintf("You Choose :");
+cin>>ab;
+switch(ab)
+{
+case 'a':
+cout<<"Wrong Answer";
+break;
+case 'b':
+cout<<"Right Answer\n";
+delay(3000);
+fun3();
+break;
+case 'c':
+cout<<"Wrong Answer";
+break;
+case 'd':
+cout<<"Wrong Answer";
+break;
+default:
+cout<<"Wrong Input";
+}
 }
 };
 class ONE:public TWO
